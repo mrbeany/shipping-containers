@@ -33,10 +33,10 @@
 	        \new Lyrics \lyricsto "trebleA" \likeInThatShowLyricsA  
 	        \new Lyrics \lyricsto "trebleA" \likeInThatShowLyricsB  
 	        \new Lyrics \lyricsto "trebleA" \likeInThatShowLyricsC  
-                \new Lyrics \lyricsto "trebleA" \likeInThatShowLyricsD  
-                \new Lyrics \lyricsto "trebleA" \likeInThatShowLyricsE  
-                \new Lyrics \lyricsto "trebleA" \likeInThatShowLyricsF  
-                \new Lyrics \lyricsto "trebleA" \likeInThatShowLyricsG  
+%               \new Lyrics \lyricsto "trebleA" \likeInThatShowLyricsD  
+%               \new Lyrics \lyricsto "trebleA" \likeInThatShowLyricsE  
+%               \new Lyrics \lyricsto "trebleA" \likeInThatShowLyricsF  
+%               \new Lyrics \lyricsto "trebleA" \likeInThatShowLyricsG  
 
             >>
             \new PianoStaff <<
@@ -79,19 +79,20 @@
     }
     \markup {
          \column {
-%           \fill-line {
-%               \column {
-%                   \likeInThatShowWordsD  
-%                   \vspace #1.0
-%                  \likeInThatShowWordsF  
-%               }
-%               \column {
-%                   \likeInThatShowWordsE  
-%                   \vspace #1.0
-%                   \likeInThatShowWordsG  
-%               }
-%           }
-%           \vspace #1.0
+            \vspace #1.0
+            \fill-line {
+                \column {
+                    \likeInThatShowWordsD  
+                    \vspace #1.0
+                    \likeInThatShowWordsF  
+                }
+                \column {
+                    \likeInThatShowWordsE  
+                    \vspace #1.0
+                    \likeInThatShowWordsG  
+                }
+            }
+            \vspace #1.0
             \line {
                 \melitaSource
             }

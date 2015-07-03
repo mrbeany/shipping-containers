@@ -3,7 +3,6 @@
 \include "../Tiny-Valkyries/Tiny_Valkyries-words.ily" 
 \include "../tunes/tune-Strassburg.ily"
 \include "../book/album.ily"
-\include "../filtermusic.ily"
 
 \bookpart {
     \header {
@@ -27,9 +26,13 @@
                     \clef "treble"
                     \new Voice="trebleA" \with {
                         \consists "Ambitus_engraver"
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
                     }{
                         \strassburgVoiceDefault
-                        \strassburgVoiceTrebleA
+                        \strassburgVoiceTrebleA_ferm_top
                     }
                 >> 
                 \new Lyrics \lyricsto "trebleA" \tinyValkA

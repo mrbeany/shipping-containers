@@ -38,8 +38,8 @@
                 \new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsA 
                 \new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsB 
                 \new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsC 
-                %\new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsD 
-                %\new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsE 
+                \new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsD 
+                \new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsE 
             >> 
         >>
 
@@ -47,15 +47,15 @@
     %   \midi {}
     }
 
-    \markup {
-        \fill-line {
-            \column {
-                \vspace #1.0
-                \wormsAndJellyfishWordsD
-                \vspace #1.0
-                \wormsAndJellyfishWordsE
-            }
-        }
-    } 
+%   \markup {
+%       \fill-line {
+%           \column {
+%               \vspace #1.0
+%               \wormsAndJellyfishWordsD
+%               \vspace #1.0
+%               \wormsAndJellyfishWordsE
+%           }
+%       }
+%   } 
 }
 

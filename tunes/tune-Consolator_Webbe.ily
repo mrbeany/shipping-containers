@@ -25,22 +25,22 @@ consolatorWebbeSource = \markup {
 }
 
 consolatorWebbeVoiceTrebleA =  {
-  g'2  e'4 c'4
+  g'2 e'4 c'4
 | a'4. g'8 g'2
-| f'4. ( g'8 -) a'4  b'4 
+| f'4. g'8 ( a'4 -) b'4 
 | c''2 g'4 r4
-| e'2  e'4 e'4
-| f'4. f'8 a'4 a'4
-|   g'2          f'!4    f'!4
-| g'2    r2  
+| e'2 e'4 e'4
+| f'4. f'8  a'4 a'4
+| g'2 f'!4    f'!4
+| g'2 r2  
 | c''2 b'4 a'4
 | g'4. f'8 e'2
 | c''2 d''8 c''8 b'8 a'8 
-| g'2  e'4 r4
-| g'4 ( e''4 -) e''4 c''4
+| g'2 e'4 r4
+| g'4 e''4 e''4 c''4
 | c''4 a'2 f'4
-| e'4 e'4        d'4.   c'8 
-|     c'1
+| e'2 d'4. c'8 
+| c'1
 \bar "|."   
 }
 
@@ -53,11 +53,14 @@ consolatorWebbeVoiceTrebleB =  {
 |   c'4.    c'8    c'4   c'4
 |   b2    c'4    c'4   
 |   b2    r2   
-|   e'2    d'!4    d'!4    |   e'4.    c'8    c'2    |   
-e'2    f'4    c'4    |   c'2    c'4    r4   |   e'2    c'4    c'4 
-   |   c'4    f'2    d'4   
-|   c'4 c'4   b4.    c'8    |   
-c'1    \bar "|."   
+|   e'2    d'!4    d'!4   
+|   e'4.    c'8    c'2   
+|   e'2    f'4    c'4   
+|   c'2    c'4    r4  
+|   e'2    c'4    c'4 
+|   c'4    f'2    d'4   
+|   c'2 b4.    c'8   
+|   c'1    \bar "|."   
 }
 
 consolatorWebbeVoiceBassA =  { 
@@ -67,11 +70,15 @@ consolatorWebbeVoiceBassA =  {
 |   g2    e4    r4  
 |   g2    g4    g4   
 |   f4.    f8    f4   f4
-|   d2    a4    a4    |   g2    r2   |  
- g2    f!4    f!4    |   g4.    a8    g2    |   g2    a4    f4    
-|   e2    g4    r4   |   g2    g!4    g!4    |   a4    c'2 
-   a4   
-|   g4 g4   f4.    e8   
+|   d2    a4    a4   
+|   g2    r2  
+|  g2    f!4    f!4   
+|   g4.    a8    g2   
+|   g2    a4    f4    
+|   e2    g4    r4  
+|   g2    g!4    g!4   
+|   a4    c'2   a4   
+|   g2 f4.    e8   
 |   e1    \bar "|."   
 }
 
@@ -90,7 +97,7 @@ consolatorWebbeVoiceBassB =  {
 |   c2    c4    r4  
 |   c2    e4    e4   
 |   f4    f2    f,4   
-|   g,4 g,4    g,4.    c8   
+|   g,2 g,4.    c8   
 |   c1   
 \bar "|."   
 }

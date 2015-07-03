@@ -1,7 +1,6 @@
 \version "2.7.40"
 
 \include "../tunes/tune-Torgau.ily"
-\include "../filtermusic.ily"
 \include "../book/album.ily" 
 \include "../Sin-and-Sentience/Sin_and_Sentience-words.ily"
 
@@ -28,7 +27,7 @@
                         \consists "Ambitus_engraver"
                     }{
 	                \torgauVoiceDefault
-	                \torgauVoiceTrebleA 
+	                \torgauVoiceTrebleA_ferm_top
 	            }
                     \new Voice="silent" {
                         s2 s1 s1 s1 \break

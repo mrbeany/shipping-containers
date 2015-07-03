@@ -27,7 +27,7 @@ Sin and sent -- i -- ence
 sinAndSentLyricsB = \lyricmode {
 \set stanza = #"2." 
 Our cit -- ies care -- less dis -- place -- ment.
-Serv -- ile they will com __ -- _ ply, yes. 
+Serv -- ile they will com -- _ ply, yes. 
 Mean -- while our priests seek sal -- va -- tion.
 They on -- ly need to __ _ teach sin.
 The fruit off -- er'd rots with -- in.

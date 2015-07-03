@@ -31,16 +31,35 @@ jesusChristusKlugVoiceTrebleA =  {
  a'4 (   gis'4  -)   a'2 ^\fermata   \bar "|."   
 }
 
-jesusChristusKlugVoiceTrebleA_dropin_noferm =  {
+%\new Voice \with {
+%  \remove "Note_heads_engraver"
+%  \consists "Completion_heads_engraver"
+%  \remove "Rest_engraver"
+%  \consists "Completion_rest_engraver"
+%}
+
+jesusChristusKlugVoiceTrebleA_autotie =  {
+ a'4    a'4    g'4    a'4    |
+ b'4    a'4    g'4 (   fis'4    |
+ e'2 -)   g'4    a'4    b'4    
+ a'4    gis'4    a'2   d''4    
+ a'8    b'8    c''4    b'4 (   a'4  -)   
+ b'2   a'4    a'4    a'4    
+ b'4    a'4    g'4 (   fis'4  -)   
+ e'2   g'4    a'4    b'4    
+ a'4 (   gis'4  -)   a'1   \bar "|."   
+}
+
+jesusChristusKlugVoiceTrebleA_dropin_autotie =  {
  a'4    a'4    g'4    a'4    
  b'4    a'4    g'4 (   fis'4    
- e'4 e'4 -)   g'4    a'4    b'4    
- a'4    gis'4    a'4 (  a'4 -)  d''4    
+ e'2 -)   g'4    a'4    b'4    
+ a'4    gis'4    a'2   d''4    
  a'8    b'8    c''4    b'4 (   a'4  -)   
- b'4 ( b'4 -)   a'4    a'4    a'4    
+ b'2   a'4    a'4    a'4    
  b'4    a'4    g'4 (   fis'4  -)   
- e'4 ( e'4 -)   g'4    a'4    b'4    
- a'4 (   gis'4  -)   a'4 ( a'4 a'2 -)   
+ e'2   g'4    a'4    b'4    
+ a'4 (   gis'4  -)   a'1   
 }
 
 jesusChristusKlugVoiceTrebleA_dropin_ferm =  {
@@ -55,44 +74,57 @@ jesusChristusKlugVoiceTrebleA_dropin_ferm =  {
  a'4 (   gis'4  -)   a'2 ^\fermata   
 }
 
-jesusChristusKlugVoiceTrebleB =  {
+jesusChristusKlugVoiceTrebleB_ferm =  {
  c'4    e'4    e'4    d'4    |
  d'4    fis'4    e'4 (   dis'4    |
- e'4 -\fermata -)   e'4    d'4    f'4    |
- e'4    e'4    e'4 -\fermata   f'4    |
+ e'4 _\fermata -)   e'4    d'4    f'4    |
+ e'4    e'4    e'4 _\fermata   f'4    |
  e'4    e'4    f'4 (   d'4  -)   |
- b4 -\fermata   cis'4    d'4    d'4    |
+ b4 _\fermata   cis'4    d'4    d'4    |
  d'4    e'4    e'4 (   dis'4  -)   |
- e'4 -\fermata   e'4    c'4    d'4    |
- e'4 (   e'8    d'8  -)   cis'2 -\fermata  
+ e'4 _\fermata   e'4    c'4    d'4    |
+ e'4 (   e'8    d'8  -)   cis'2 _\fermata  
 \bar "|."   
 }
 
-jesusChristusKlugVoiceTrebleB_dropin_noferm =  {
+jesusChristusKlugVoiceTrebleB_autotie =  {
+ c'4    e'4    e'4    d'4    |
+ d'4    fis'4    e'4 (   dis'4    |
+ e'2 -)   e'4    d'4    f'4    
+ e'4    e'4    e'2   f'4     
+ e'4    e'4    f'4 (   d'4  -)  
+ b2   cis'4    d'4    d'4   
+ d'4    e'4    e'4 (   dis'4  -)   
+ e'2   e'4    c'4    d'4    
+ e'4 (   e'8    d'8  -)   cis'1 
+\bar "|."   
+}
+
+jesusChristusKlugVoiceTrebleB_dropin_autotie =  {
  c'4    e'4    e'4    d'4    
  d'4    fis'4    e'4 (   dis'4    
- e'4 e'4 -)   e'4    d'4    f'4    
- e'4    e'4    e'4 ( e'4 -)   f'4    
- e'4    e'4    f'4 (   d'4  -)   
- b4 ( b4 -)   cis'4    d'4    d'4    
+ e'2 -)   e'4    d'4    f'4    
+ e'4    e'4    e'2   f'4     
+ e'4    e'4    f'4 (   d'4  -)  
+ b2   cis'4    d'4    d'4   
  d'4    e'4    e'4 (   dis'4  -)   
- e'4 ( e'4 -)   e'4    c'4    d'4    
- e'4 (   e'8    d'8  -)   cis'4 ( cis'4 cis'2 -)  
+ e'2   e'4    c'4    d'4    
+ e'4 (   e'8    d'8  -)   cis'1 
 }
 
 jesusChristusKlugVoiceTrebleB_dropin_ferm =  {
  c'4    e'4    e'4    d'4    
  d'4    fis'4    e'4 (   dis'4    
- e'4 -\fermata -)   e'4    d'4    f'4    
- e'4    e'4    e'4 -\fermata   f'4    
+ e'4 _\fermata -)   e'4    d'4    f'4    
+ e'4    e'4    e'4 _\fermata   f'4    
  e'4    e'4    f'4 (   d'4  -)   
- b4 -\fermata   cis'4    d'4    d'4    
+ b4 _\fermata   cis'4    d'4    d'4    
  d'4    e'4    e'4 (   dis'4  -)   
- e'4 -\fermata   e'4    c'4    d'4    
- e'4 (   e'8    d'8  -)   cis'2 -\fermata  
+ e'4 _\fermata   e'4    c'4    d'4    
+ e'4 (   e'8    d'8  -)   cis'2 _\fermata  
 }
 
-jesusChristusKlugVoiceBassA = {
+jesusChristusKlugVoiceBassA_ferm = {
  e4    a4    b4    a4    |
  g4    c'4    b4 (   b8    a8    |
  g4 _\fermata -)   c'4    a4    d'4    |
@@ -103,6 +135,31 @@ jesusChristusKlugVoiceBassA = {
  g4 _\fermata   g4    fis4    g4    |
  c'4 (   b4  -)   a2 _\fermata   
 \bar "|."   
+}
+
+jesusChristusKlugVoiceBassA_autotie = {
+ e4    a4    b4    a4    |
+ g4    c'4    b4 (   b8    a8    |
+ g2 -)   c'4    a4    d'4    
+ c'4    b4    c'2   a4    
+ a4    a4    a4 (   b4  -)   
+ gis2   g!4    f4    fis4    
+ g4    c'4    b4 (   b8    a8  -)   
+ g2   g4    fis4    g4   
+ c'4 (   b4  -)   a1   
+\bar "|."   
+}
+
+jesusChristusKlugVoiceBassA_dropin_autotie = {
+ e4    a4    b4    a4    
+ g4    c'4    b4 (   b8    a8    
+ g2 -)   c'4    a4    d'4    
+ c'4    b4    c'2   a4    
+ a4    a4    a4 (   b4  -)   
+ gis2   g!4    f4    fis4    
+ g4    c'4    b4 (   b8    a8  -)   
+ g2   g4    fis4    g4   
+ c'4 (   b4  -)   a1   
 }
 
 jesusChristusKlugVoiceBassA_dropin_ferm = {
@@ -117,56 +174,57 @@ jesusChristusKlugVoiceBassA_dropin_ferm = {
  c'4 (   b4  -)   a2 _\fermata   
 }
 
-jesusChristusKlugVoiceBassA_dropin_noferm = {
- e4    a4    b4    a4    
- g4    c'4    b4 (   b8    a8    
- g4 g4 -)   c'4    a4    d'4    
- c'4    b4    c'4 ( c'4 -)   a4    
- a4    a4    a4 (   b4  -)   
- gis4 ( gis4 -)   g!4    f4    fis4    
- g4    c'4    b4 (   b8    a8  -)   
- g4 ( g4 -)   g4    fis4    g4    
- c'4 (   b4  -)   a4 ( a4 a2 -)   
-}
-
-jesusChristusKlugVoiceBassB = {
+jesusChristusKlugVoiceBassB_ferm = {
   a,4    c4    e4    fis4   
 | g4     a4    b4 (   b,4   
-| e4 -\fermata -)   c4    f4    g4   
-| a4    e4    a,4 -\fermata b,4   
+| e4 ^\fermata -)   c4    f4    g4   
+| a4    e4    a,4 ^\fermata b,4   
 | c4    a4    d4 (   f4  -)  
-| e4 -\fermata   a,4    d4    d4   
+| e4 ^\fermata   a,4    d4    d4   
 | g,4    a,4    b,2   
-| e4 -\fermata   c4    a,4 g,4   
-| a,4 (   e4  -)   a,2 -\fermata  
+| e4 ^\fermata   c4    a,4 g,4   
+| a,4 (   e4  -)   a,2 ^\fermata  
 \bar "|."  
 }
 
-jesusChristusKlugVoiceBassB_dropin_noferm = {
- a,4    c4    e4    fis4    
- g4     a4    b4 (   b,4    
- e4 e4 -)   c4    f4    g4    
- a4    e4    a,4 ( a,4 -) b,4    
- c4    a4    d4 (   f4  -)   
- e4 ( e4 -)   a,4    d4    d4    
- g,4    a,4    b,2    
- e4 ( e4 -)   c4    a,4 g,4    
- a,4 (   e4  -)   a,4 ( a,4 a,2 -) 
+jesusChristusKlugVoiceBassB_autotie = {
+  a,4    c4    e4    fis4   
+| g4     a4    b4 (   b,4   
+| e2 -)   c4    f4    g4   
+  a4    e4    a,2 b,4   
+  c4    a4    d4 (   f4  -)  
+  e2   a,4    d4    d4   
+  g,4    a,4    b,2   
+  e2   c4    a,4 g,4   
+  a,4 (   e4  -)   a,1 
+\bar "|."  
+}
+
+jesusChristusKlugVoiceBassB_dropin_autotie = {
+  a,4    c4    e4    fis4   
+  g4     a4    b4 (   b,4   
+  e2 -)   c4    f4    g4   
+  a4    e4    a,2 b,4   
+  c4    a4    d4 (   f4  -)  
+  e2   a,4    d4    d4   
+  g,4    a,4    b,2   
+  e2   c4    a,4 g,4   
+  a,4 (   e4  -)   a,1 
 }
 
 jesusChristusKlugVoiceBassB_dropin_ferm = {
  a,4    c4    e4    fis4    
  g4     a4    b4 (   b,4    
- e4 -\fermata -)   c4    f4    g4    
- a4    e4    a,4 -\fermata b,4    
+ e4 ^\fermata -)   c4    f4    g4    
+ a4    e4    a,4 ^\fermata b,4    
  c4    a4    d4 (   f4  -)   
- e4 -\fermata   a,4    d4    d4    
+ e4 ^\fermata   a,4    d4    d4    
  g,4    a,4    b,2    
- e4 -\fermata   c4    a,4 g,4    
- a,4 (   e4  -)   a,2 -\fermata  
+ e4 ^\fermata   c4    a,4 g,4    
+ a,4 (   e4  -)   a,2 ^\fermata  
 }
 
-jesusChristusKlugVoiceMetronome = \drummode {
+jesusChristusKlugVoiceMetronome_ferm = \drummode {
  sn4 ss ss ss |
  sn4 ss ss ss |
  sn4 -\fermata ss ss ss |
@@ -177,6 +235,31 @@ jesusChristusKlugVoiceMetronome = \drummode {
  sn4 -\fermata  ss ss ss |
  sn4 ss ss2 -\fermata  
  \bar "|."
+}
+
+jesusChristusKlugVoiceMetronome_autotie = \drummode {
+ sn4 ss ss ss |
+ sn4 ss ss ss |
+ sn2 ss4 ss ss 
+ sn4 ss ss2 ss4 
+ sn4 ss ss ss 
+ sn2 ss4 ss ss 
+ sn4 ss ss ss 
+ sn2 ss4 ss ss 
+ sn4 ss ss1 
+ \bar "|."
+}
+
+jesusChristusKlugVoiceMetronome_dropin_autotie = \drummode {
+ sn4 ss ss ss 
+ sn4 ss ss ss 
+ sn2 ss4 ss ss 
+ sn4 ss ss2 ss4 
+ sn4 ss ss ss 
+ sn2 ss4 ss ss 
+ sn4 ss ss ss 
+ sn2 ss4 ss ss 
+ sn4 ss ss1 
 }
 
 jesusChristusKlugVoiceClick_dropin_ferm = \drummode {
@@ -191,16 +274,16 @@ jesusChristusKlugVoiceClick_dropin_ferm = \drummode {
  ss4 ss ss2 -\fermata  
 }
 
-jesusChristusKlugVoiceClick_dropin_noferm = \drummode {
+jesusChristusKlugVoiceClick_dropin_autotie = \drummode {
  ss4 ss ss ss 
  ss4 ss ss ss 
- ss4 ss ss ss ss 
- ss4 ss ss ss ss 
+ ss2 ss4 ss ss 
+ ss4 ss ss2 ss4 
  ss4 ss ss ss 
- ss4 ss ss ss ss 
+ ss2 ss4 ss ss 
  ss4 ss ss ss 
- ss4 ss ss ss ss 
- ss4 ss ss ss ss ss 
+ ss2 ss4 ss ss 
+ ss4 ss ss1 
 }
 
 jesusChristusKlugVoiceDefault =  {

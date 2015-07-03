@@ -4,7 +4,6 @@
 \include "../tunes/tune-Jesus_Christus_Klug.ily"
 \include "../tunes/tune-St_Anne.ily" 
 \include "../Natures-Brain/Natures_Brain-words.ily"
-\include "../filtermusic.ily"
 \include "../book/album.ily"
 
 verse_end = { \bar "." }
@@ -33,7 +32,11 @@ bridge_end = { r4 \bar "|." }
                     \clef "treble"
                     \new Voice="trebleA" \with {
                         \consists "Ambitus_engraver"
-                    }{
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    } {
 	                \easterHymnVoiceDefault
 	                \easterHymnVoiceTrebleA_dropin
                         \verse_end
@@ -41,7 +44,7 @@ bridge_end = { r4 \bar "|." }
 	                \stAnneVoiceTrebleA_dropin
                         \chorus_end
 	                \jesusChristusKlugVoiceDefault_dropin
-	                \jesusChristusKlugVoiceTrebleA_dropin_noferm
+	                \jesusChristusKlugVoiceTrebleA_dropin_autotie
                         \bridge_end
 	            }
                     \new Voice="silent" {

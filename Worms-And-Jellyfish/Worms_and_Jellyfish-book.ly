@@ -38,8 +38,8 @@
 	        \new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsA 
 	        \new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsB 
 	        \new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsC 
-	        \new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsD 
-	        \new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsE 
+%        \new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsD 
+%        \new Lyrics \lyricsto "trebleA" \wormsAndJellyfishLyricsE 
             >>
 
             \new PianoStaff <<
@@ -71,20 +71,19 @@
     %   \midi {}
     }
 
-    %\markup {
-    %    \fill-line {
-    %    \column {
-    %        \wormsAndJellyfishWordsD
-    %    \line {\null }
-    %    \line {\null }
-    %        \wormsAndJellyfishWordsE
-    %    }
-    %    }
-    %}
+    \markup {
+        \fill-line {
+        \column {
+            \wormsAndJellyfishWordsD
+            \vspace #0.8
+            \wormsAndJellyfishWordsE
+        }
+        }
+    }
 
     \markup {
         \column {
-%           \vspace #1.5
+            \vspace #1.5
             \consolatorWebbeSource
         }
     }

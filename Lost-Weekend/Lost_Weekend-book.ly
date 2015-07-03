@@ -41,9 +41,9 @@
 	        \new Lyrics \lyricsto "trebleA" \lostWeekendLyricsA 
 	        \new Lyrics \lyricsto "trebleA" \lostWeekendLyricsB  
 	        \new Lyrics \lyricsto "trebleA" \lostWeekendLyricsC 
-                \new Lyrics \lyricsto "trebleA" \lostWeekendLyricsD 
-                \new Lyrics \lyricsto "trebleA" \lostWeekendLyricsE 
-                \new Lyrics \lyricsto "trebleA" \lostWeekendLyricsF 
+%               \new Lyrics \lyricsto "trebleA" \lostWeekendLyricsD 
+%               \new Lyrics \lyricsto "trebleA" \lostWeekendLyricsE 
+%               \new Lyrics \lyricsto "trebleA" \lostWeekendLyricsF 
             >>
 
             \new PianoStaff <<
@@ -80,13 +80,17 @@
 
     \markup {
         \column {
-            % \vspace #0.8
-%           \lostWeekendWordsD
-%           \vspace #0.1
-%           \lostWeekendWordsE
-%           \vspace #0.1
-%           \lostWeekendWordsF
-%           \vspace #0.8
+            \vspace #1.8
+            \fill-line {
+                \column {
+                    \lostWeekendWordsD
+                    \vspace #1.0
+                    \lostWeekendWordsE
+                    \vspace #1.0
+                    \lostWeekendWordsF
+                }
+            }
+            \vspace #1.8
             \regentSquareSource
         }
     } 

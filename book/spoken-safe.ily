@@ -267,7 +267,7 @@
             That might not be the only thing to
         }
         \line{
-            make us weep. Maybe noone will buy
+            make us weep. Maybe no one will buy
         }
         \line{
             buy our album.

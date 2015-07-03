@@ -27,8 +27,8 @@
             one song combining two different space-related fandoms.)
             The tunes of these songs are explicitly public domain hymns.
             Most of these songs use a single hymn tune per song, but a few
-            combine multiple hymn tunes in to a more structure containing
-            chorus, verse, and bridge components. 
+            combine multiple hymn tunes in to a more modern structure
+            containing chorus, verse, and bridge components. 
         }
         \vspace #1.0
         \fill-line{

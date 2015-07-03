@@ -8,7 +8,7 @@ thePitLyricsA = \lyricmode {
 I'm trap'd in a dry, des -- ert land.
 The town emp -- ty, save for a few.
 All have been sa -- cri -- ficed a -- way.
-Soon i will have to face the pit.
+Soon I will have to face the pit.
 }
 
 
@@ -31,10 +31,10 @@ Wel -- com'd on -- ly to the doom pit.
 
 thePitLyricsD = \lyricmode {
   \set stanza = #"4."
-If we're luck -- y per -- haps mob boss's
-will cast un -- want -- ed bod -- ies there.
-Then, per -- haps, we could ig -- nore it,
-a sad and un -- wor -- ship'd black pit.
+If we're luck -- y per -- haps mob boss -- es
+will cast un -- want -- ed bod -- ies there;
+then, per -- haps, we could ig -- nore it,
+a sad and un -- wor -- ship'd pit.
 }
 
 

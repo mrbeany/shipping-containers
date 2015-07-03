@@ -2,7 +2,6 @@
 
 \include "../tunes/tune-Ich_Sterbe_Taeglich.ily" 
 \include "../Shipping-Containers/Shipping_Containers-words.ily"
-\include "../filtermusic.ily"
 \include "../book/album.ily"
 
 

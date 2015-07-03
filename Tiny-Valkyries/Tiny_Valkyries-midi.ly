@@ -3,7 +3,6 @@
 \include "../Tiny-Valkyries/Tiny_Valkyries-words.ily" 
 \include "../tunes/tune-Strassburg.ily"
 \include "../book/album.ily"
-\include "../filtermusic.ily"
 
 \header {
     tagline = \albumTagline
@@ -24,26 +23,36 @@
                     \set Staff.printPartCombineTexts = ##f
                     \set Staff.extraNatural = ##f
                     \clef "treble"
-                    \new Voice {
+                    \new Voice \with {
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    }{
                         \strassburgVoiceDefault
                         \partcombine
                         \repeat unfold 2 
-                        \strassburgVoiceTrebleA_dropin
+                        \strassburgVoiceTrebleA_dropin_autotie
                         \repeat unfold 2 
-                        \strassburgVoiceTrebleB_dropin
+                        \strassburgVoiceTrebleB_dropin_autotie
                     }
                 >> 
 	        \new Staff <<
                     \set Staff.printPartCombineTexts = ##f
                     \set Staff.extraNatural = ##f
                     \clef "bass"
-                    \new Voice {
+                    \new Voice \with {
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    }{
                         \strassburgVoiceDefault
                         \partcombine
                         \repeat unfold 2 
-                        \strassburgVoiceBassA_dropin
+                        \strassburgVoiceBassA_dropin_autotie
                         \repeat unfold 2 
-                        \strassburgVoiceBassB_dropin
+                        \strassburgVoiceBassB_dropin_autotie
                     }
                 >>
             >> 
@@ -62,26 +71,36 @@
                     \set Staff.printPartCombineTexts = ##f
                     \set Staff.extraNatural = ##f
                     \clef "treble"
-                    \new Voice {
+                    \new Voice \with {
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    }{
                         \strassburgVoiceDefault
                         \partcombine
                         \repeat unfold 2 
-                        \strassburgVoiceTrebleA_dropin
+                        \strassburgVoiceTrebleA_dropin_autotie
                         \repeat unfold 2 
-                        \strassburgVoiceTrebleB_dropin
+                        \strassburgVoiceTrebleB_dropin_autotie
                     }
                 >> 
 	        \new Staff <<
                     \set Staff.printPartCombineTexts = ##f
                     \set Staff.extraNatural = ##f
                     \clef "bass"
-                    \new Voice {
+                    \new Voice \with {
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    }{
                         \strassburgVoiceDefault
                         \partcombine
                         \repeat unfold 2 
-                        \strassburgVoiceBassA_dropin
+                        \strassburgVoiceBassA_dropin_autotie
                         \repeat unfold 2 
-                        \strassburgVoiceBassB_dropin
+                        \strassburgVoiceBassB_dropin_autotie
                     }
                 >>
             >> 
@@ -90,7 +109,7 @@
                 \set Staff.instrumentName = #"Metronome"
                 \drummode {
                     \repeat unfold 2 
-                            \strassburgVoiceMetronome_dropin
+                            \strassburgVoiceMetronome_dropin_autotie
                 }
             >>
 
@@ -102,10 +121,14 @@
                     \clef "treble"
                     \new Voice="trebleA" \with {
                         \consists "Ambitus_engraver"
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
                     }{
                         \strassburgVoiceDefault
                         \repeat unfold 2 
-                        \strassburgVoiceTrebleA_dropin
+                        \strassburgVoiceTrebleA_dropin_autotie
                     }
                 >> 
                 \new Lyrics \lyricsto "trebleA" {
@@ -115,7 +138,7 @@
             >>
         >>
 
-	%\layout { }
+%	\layout { }
 	\midi {}
     } 
 }

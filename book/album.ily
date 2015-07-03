@@ -6,26 +6,6 @@ albumTagline = \markup {
     }
 
 albumCopyright = \markup {
-    \fill-line {
-        \center-column { "BETA" "BETA" }
-        \column {
-            \line {\italic "Finished" version will be CC-BY.}
-            \line {See 
-                \with-url #"http://mrbeany.bandcamp.com/" {
-                    http://mybeany.bandcamp.com/
-                }
-            }
-        }
-        \center-column { "BETA" "(v.1)" }
-        \column { 
-            \line {Copyright \char ##x00A9 2015 S.W. Black.}
-            \line {All Rights Reserved.}
-        }
-        \center-column { "BETA" "BETA" }
-    }
-}
-
-REALalbumCopyright = \markup {
     \column { \line {
         \abs-fontsize #8 \column {
             \vspace #0.5

@@ -4,7 +4,6 @@
 \include "../tunes/tune-Jesus_Christus_Klug.ily"
 \include "../tunes/tune-St_Anne.ily" 
 \include "../Natures-Brain/Natures_Brain-words.ily"
-\include "../filtermusic.ily"
 \include "../book/album.ily"
 
 verse_end = { \bar "." }
@@ -30,7 +29,12 @@ all_end = { \bar "|." }
                     \set Staff.printPartCombineTexts = ##f
                     \set Staff.extraNatural = ##f
                     \clef "treble"
-                    \new Voice {
+                    \new Voice \with { 
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    } {
                         \partcombine {
                             \easterHymnVoiceDefault
                             \easterHymnVoiceTrebleA_dropin
@@ -45,7 +49,7 @@ all_end = { \bar "|." }
                             \stAnneVoiceTrebleA_dropin
                             \chorus_end 
                             \jesusChristusKlugVoiceDefault_dropin
-                            \jesusChristusKlugVoiceTrebleA_dropin_noferm
+                            \jesusChristusKlugVoiceTrebleA_dropin_autotie
                             \bridge_end
                             \easterHymnVoiceDefault
                             \easterHymnVoiceTrebleA_dropin
@@ -63,7 +67,7 @@ all_end = { \bar "|." }
                             \stAnneVoiceTrebleB_dropin
                             \chorus_end 
                             \jesusChristusKlugVoiceDefault_dropin
-                            \jesusChristusKlugVoiceTrebleB_dropin_noferm
+                            \jesusChristusKlugVoiceTrebleB_dropin_autotie
                             \bridge_end
                             \easterHymnVoiceDefault
                             \easterHymnVoiceTrebleB_dropin
@@ -74,7 +78,12 @@ all_end = { \bar "|." }
                     \set Staff.printPartCombineTexts = ##f
                     \set Staff.extraNatural = ##f
                     \clef "bass" 
-                    \new Voice {
+                    \new Voice \with { 
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    } {
                         \partcombine {
                             \easterHymnVoiceDefault
                             \easterHymnVoiceBassA_dropin
@@ -89,7 +98,7 @@ all_end = { \bar "|." }
                             \stAnneVoiceBassA_dropin
                             \chorus_end 
                             \jesusChristusKlugVoiceDefault_dropin
-                            \jesusChristusKlugVoiceBassA_dropin_noferm
+                            \jesusChristusKlugVoiceBassA_dropin_autotie
                             \bridge_end
                             \easterHymnVoiceDefault_dropin
                             \easterHymnVoiceBassA_dropin
@@ -107,7 +116,7 @@ all_end = { \bar "|." }
                             \stAnneVoiceBassB_dropin
                             \chorus_end 
                             \jesusChristusKlugVoiceDefault_dropin
-                            \jesusChristusKlugVoiceBassB_dropin_noferm
+                            \jesusChristusKlugVoiceBassB_dropin_autotie
                             \bridge_end
                             \easterHymnVoiceDefault_dropin
                             \easterHymnVoiceBassB_dropin
@@ -130,9 +139,15 @@ all_end = { \bar "|." }
                     \set Staff.printPartCombineTexts = ##f
                     \set Staff.extraNatural = ##f
                     \clef "treble"
-                    \new Voice {
+                    \new Voice \with { 
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    } {
                         \partcombine {
                             \easterHymnVoiceDefault
+                            { r1 }
                             \easterHymnVoiceTrebleA_dropin
                             \verse_end
                             \stAnneVoiceDefault_dropin
@@ -145,11 +160,12 @@ all_end = { \bar "|." }
                             \stAnneVoiceTrebleA_dropin
                             \chorus_end 
                             \jesusChristusKlugVoiceDefault_dropin
-                            \jesusChristusKlugVoiceTrebleA_dropin_noferm
+                            \jesusChristusKlugVoiceTrebleA_dropin_autotie
                             \bridge_end
                             \easterHymnVoiceDefault_dropin
                             \easterHymnVoiceTrebleA_dropin
                         } {
+                            { r1 }
                             \easterHymnVoiceDefault
                             \easterHymnVoiceTrebleB_dropin
                             \verse_end
@@ -163,7 +179,7 @@ all_end = { \bar "|." }
                             \stAnneVoiceTrebleB_dropin
                             \chorus_end 
                             \jesusChristusKlugVoiceDefault_dropin
-                            \jesusChristusKlugVoiceTrebleB_dropin_noferm
+                            \jesusChristusKlugVoiceTrebleB_dropin_autotie
                             \bridge_end
                             \easterHymnVoiceDefault_dropin
                             \easterHymnVoiceTrebleB_dropin
@@ -174,8 +190,14 @@ all_end = { \bar "|." }
                     \set Staff.printPartCombineTexts = ##f
                     \set Staff.extraNatural = ##f
                     \clef "bass" 
-                    \new Voice {
+                    \new Voice \with { 
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    } {
                         \partcombine {
+                            { r1 }
                             \easterHymnVoiceDefault
                             \easterHymnVoiceBassA_dropin
                             \verse_end
@@ -189,11 +211,12 @@ all_end = { \bar "|." }
                             \stAnneVoiceBassA_dropin
                             \chorus_end 
                             \jesusChristusKlugVoiceDefault_dropin
-                            \jesusChristusKlugVoiceBassA_dropin_noferm
+                            \jesusChristusKlugVoiceBassA_dropin_autotie
                             \bridge_end
                             \easterHymnVoiceDefault_dropin
                             \easterHymnVoiceBassA_dropin
                         } { 
+                            { r1 }
                             \easterHymnVoiceDefault
                             \easterHymnVoiceBassB_dropin
                             \verse_end
@@ -207,7 +230,7 @@ all_end = { \bar "|." }
                             \stAnneVoiceBassB_dropin
                             \chorus_end 
                             \jesusChristusKlugVoiceDefault_dropin
-                            \jesusChristusKlugVoiceBassB_dropin_noferm
+                            \jesusChristusKlugVoiceBassB_dropin_autotie
                             \bridge_end
                             \easterHymnVoiceDefault_dropin
                             \easterHymnVoiceBassB_dropin
@@ -218,6 +241,7 @@ all_end = { \bar "|." }
 
             \new DrumStaff <<
                 \drummode {
+                        ss4 ss ss ss
                         \easterHymnVoiceDefault
                         \easterHymnVoiceClick_dropin
                         % \verse_end
@@ -231,7 +255,7 @@ all_end = { \bar "|." }
                         \stAnneVoiceClick_dropin
                         ss4 %\chorus_end 
                         \jesusChristusKlugVoiceDefault_dropin
-                        \jesusChristusKlugVoiceClick_dropin_noferm
+                        \jesusChristusKlugVoiceClick_dropin_autotie
                         ss4 %\bridge_end
                         \easterHymnVoiceDefault_dropin
                         \easterHymnVoiceClick_dropin
@@ -241,12 +265,18 @@ all_end = { \bar "|." }
 
             \new ChoirStaff <<
                 \new Staff="staffTreble" <<
+                    \set Staff.midiInstrument = #"flute"
                     \set Staff.printPartCombineTexts = ##f
                     \set Staff.extraNatural = ##f
                     \clef "treble"
                     \new Voice="trebleA" \with {
                         \consists "Ambitus_engraver"
-                    }{
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    } {
+                        { r1 }
                         \easterHymnVoiceDefault
                         \easterHymnVoiceTrebleA_dropin
                         \verse_end
@@ -260,7 +290,7 @@ all_end = { \bar "|." }
                         \stAnneVoiceTrebleA_dropin
                         \chorus_end 
                         \jesusChristusKlugVoiceDefault_dropin
-                        \jesusChristusKlugVoiceTrebleA_dropin_noferm
+                        \jesusChristusKlugVoiceTrebleA_dropin_autotie
                         \bridge_end
                         \easterHymnVoiceDefault_dropin
                         \easterHymnVoiceTrebleA_dropin

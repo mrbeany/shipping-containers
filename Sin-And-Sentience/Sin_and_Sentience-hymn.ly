@@ -1,9 +1,9 @@
 \version "2.7.40"
 
 \include "../tunes/tune-Torgau.ily"
-\include "../filtermusic.ily"
 \include "../book/album.ily" 
-\include "../Sin-and-Sentience/Sin_and_Sentience-words.ily"
+\include "../Sin-and-Sentience/Sin_and_Sentience-words.ily" 
+\include "../filtermusic.ily"
 
 \bookpart { 
     \header {
@@ -25,12 +25,12 @@
                     \new Voice="trebleA" {
                         \voiceOne
 	                \torgauVoiceDefault
-	                \torgauVoiceTrebleA 
+	                \torgauVoiceTrebleA_ferm_top
 	            }
                     \new Voice="trebleB" {
                         \voiceTwo
 	                \torgauVoiceDefault
-	                \filtermusic \torgauVoiceTrebleB 
+	                \filtermusic \torgauVoiceTrebleB_ferm_top
                     }
                 >>
 
@@ -43,12 +43,12 @@
                     \new Voice="bassA" {
                         \voiceOne
 	                \torgauVoiceDefault
-	                \filtermusic \torgauVoiceBassA 
+	                \filtermusic \torgauVoiceBassA_ferm_bottom
 	            }
                     \new Voice="bassB" {
                         \voiceTwo
 	                \torgauVoiceDefault
-	                \torgauVoiceBassB 
+	                \torgauVoiceBassB_ferm_bottom
                     }
                 >>
             >>

@@ -23,16 +23,26 @@
             \new ChoirStaff << 
 	        \new Staff="treble" <<
                     \clef "treble"
-                    \new Voice="trebleA" {
+                    \new Voice="trebleA" \with {
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    }{
                         \voiceOne <<
                             \strassburgVoiceDefault
-                            \strassburgVoiceTrebleA
+                            \strassburgVoiceTrebleA_ferm_top
                         >>
                     }
-                    \new Voice {
+                    \new Voice \with {
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    }{
 	                \voiceTwo <<
                             \strassburgVoiceDefault
-                            \filtermusic \strassburgVoiceTrebleB
+                            \filtermusic \strassburgVoiceTrebleB_ferm_top
                         >>
                     }
                 >>
@@ -42,16 +52,26 @@
 
 	        \new Staff="bass" <<
                     \clef "bass"
-                    \new Voice {
+                    \new Voice \with {
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    }{
 	                \voiceOne <<
                             \strassburgVoiceDefault
-                            \filtermusic \strassburgVoiceBassA
+                            \strassburgVoiceBassA_ferm_bottom
                         >>
                     }
-                    \new Voice {
+                    \new Voice \with {
+                        \remove "Note_heads_engraver"
+                        \consists "Completion_heads_engraver"
+                        \remove "Rest_engraver"
+                        \consists "Completion_rest_engraver"
+                    }{
                         \voiceTwo <<
                             \strassburgVoiceDefault
-                            \strassburgVoiceBassB
+                            \filtermusic \strassburgVoiceBassB_ferm_bottom
                         >>
                     }
                 >>

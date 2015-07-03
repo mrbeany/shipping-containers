@@ -19,7 +19,7 @@ A sharp wo -- man, good with knives,
 her mach -- ines would carve the world.
 E -- merg -- ing gifts, e -- merg -- _ _ ing lives.
 Keep -- ing us safe from strange __ _ new __ _ plights.
-I'd make sand -wich's, slice some chives.
+I'd make sand -- wich's, slice some chives.
 We'd watch as the land un -- furl'd.
 }
 

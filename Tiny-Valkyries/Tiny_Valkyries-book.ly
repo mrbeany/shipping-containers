@@ -3,7 +3,6 @@
 \include "../Tiny-Valkyries/Tiny_Valkyries-words.ily" 
 \include "../tunes/tune-Strassburg.ily"
 \include "../book/album.ily"
-\include "../filtermusic.ily"
 
 \bookpart {
     \header {
@@ -29,7 +28,7 @@
                         \consists "Ambitus_engraver"
                     }{
                         \strassburgVoiceDefault
-                        \strassburgVoiceTrebleA
+                        \strassburgVoiceTrebleA_ferm_top
                     }
                 >> 
                 \new Lyrics \lyricsto "trebleA" \tinyValkA
@@ -44,8 +43,8 @@
                     \new Voice {
                         \strassburgVoiceDefault
                         \partcombine
-                        \strassburgVoiceTrebleA
-                        \strassburgVoiceTrebleB
+                        \strassburgVoiceTrebleA_ferm_top
+                        \strassburgVoiceTrebleB_ferm_top
                     }
                 >>
 
@@ -56,8 +55,8 @@
                     \new Voice {
                         \strassburgVoiceDefault
                         \partcombine
-                        \strassburgVoiceBassA
-                        \strassburgVoiceBassB
+                        \strassburgVoiceBassA_ferm_bottom
+                        \strassburgVoiceBassB_ferm_bottom
                     }
                 >>
             >> 

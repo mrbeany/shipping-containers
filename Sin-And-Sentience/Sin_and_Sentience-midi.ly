@@ -1,7 +1,6 @@
 \version "2.7.40"
 
 \include "../tunes/tune-Torgau.ily"
-\include "../filtermusic.ily"
 \include "../book/album.ily" 
 \include "../Sin-and-Sentience/Sin_and_Sentience-words.ily"
 
@@ -27,9 +26,9 @@
 	                \torgauVoiceDefault
                         \partcombine
                         \repeat unfold 3 
-	                \torgauVoiceTrebleA_dropin
+	                \torgauVoiceTrebleA_dropin_autotie
                         \repeat unfold 3 
-	                \torgauVoiceTrebleB_dropin
+	                \torgauVoiceTrebleB_dropin_autotie
                     }
                 >> 
 	        \new Staff <<
@@ -40,9 +39,9 @@
 	                \torgauVoiceDefault
                         \partcombine
                         \repeat unfold 3 
-	                \torgauVoiceBassA_dropin
+	                \torgauVoiceBassA_dropin_autotie
                         \repeat unfold 3 
-	                \torgauVoiceBassB_dropin
+	                \torgauVoiceBassB_dropin_autotie
                     }
                 >>
             >>
@@ -64,9 +63,9 @@
 	                \torgauVoiceDefault
                         \partcombine
                         \repeat unfold 3 
-	                \torgauVoiceTrebleA_dropin 
+	                \torgauVoiceTrebleA_dropin_autotie
                         \repeat unfold 3 
-	                \torgauVoiceTrebleB_dropin 
+	                \torgauVoiceTrebleB_dropin_autotie
                     }
                 >> 
 	        \new Staff <<
@@ -77,9 +76,9 @@
 	                \torgauVoiceDefault
                         \partcombine
                         \repeat unfold 3 
-	                \torgauVoiceBassA_dropin
+	                \torgauVoiceBassA_dropin_autotie
                         \repeat unfold 3 
-	                \torgauVoiceBassB_dropin
+	                \torgauVoiceBassB_dropin_autotie
                     }
                 >>
             >>
@@ -88,7 +87,7 @@
                 \set Staff.instrumentName = #"Metronome"
                 \drummode {
                     \repeat unfold 3 
-                            \torgauVoiceMetronome_dropin
+                            \torgauVoiceMetronome_dropin_autotie
                 }
             >>
 
@@ -100,7 +99,7 @@
                     }{
 	                \torgauVoiceDefault
                         \repeat unfold 3 
-	                \torgauVoiceTrebleA_dropin
+	                \torgauVoiceTrebleA_dropin_autotie
 	            }
                 >> 
 	        \new Lyrics \lyricsto "trebleA" {

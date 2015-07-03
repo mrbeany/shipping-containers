@@ -4,7 +4,6 @@
 \include "../tunes/tune-Jesus_Christus_Klug.ily"
 \include "../tunes/tune-St_Anne.ily" 
 \include "../Natures-Brain/Natures_Brain-words.ily"
-\include "../filtermusic.ily"
 \include "../book/album.ily"
 
 verse_end = { \bar "." }
@@ -28,7 +27,12 @@ bridge_end = { r4 \bar "|." }
         \new ChoirStaff <<
 	    \new Staff="staffTreble" <<
                 \clef "treble"
-                \new Voice="trebleA" {
+                \new Voice="trebleA" \with { 
+                    \remove "Note_heads_engraver"
+                    \consists "Completion_heads_engraver"
+                    \remove "Rest_engraver"
+                    \consists "Completion_rest_engraver"
+                } {
                     \voiceOne
 	            \easterHymnVoiceDefault
 	            \easterHymnVoiceTrebleA_dropin
@@ -37,10 +41,15 @@ bridge_end = { r4 \bar "|." }
 	            \stAnneVoiceTrebleA_dropin
                     \chorus_end
 	            \jesusChristusKlugVoiceDefault_dropin
-	            \jesusChristusKlugVoiceTrebleA_dropin_noferm
+	            \jesusChristusKlugVoiceTrebleA_dropin_autotie
                     \bridge_end
 	        }
-                \new Voice="trebleB" {
+                \new Voice="trebleB" \with {
+                    \remove "Note_heads_engraver"
+                    \consists "Completion_heads_engraver"
+                    \remove "Rest_engraver"
+                    \consists "Completion_rest_engraver"
+                } {
                     \voiceTwo
 	            \easterHymnVoiceDefault
 	            \easterHymnVoiceTrebleB_dropin
@@ -49,7 +58,7 @@ bridge_end = { r4 \bar "|." }
 	            \stAnneVoiceTrebleB_dropin
                     \chorus_end
 	            \jesusChristusKlugVoiceDefault_dropin
-	            \jesusChristusKlugVoiceTrebleB_dropin_noferm
+	            \jesusChristusKlugVoiceTrebleB_dropin_autotie
                     \bridge_end
 	        }
             >>
@@ -87,7 +96,12 @@ bridge_end = { r4 \bar "|." }
 
 	    \new Staff = "bass" <<
                 \clef "bass" 
-	        \new Voice="bassA" {
+	        \new Voice="bassA" \with {
+                    \remove "Note_heads_engraver"
+                    \consists "Completion_heads_engraver"
+                    \remove "Rest_engraver"
+                    \consists "Completion_rest_engraver"
+                } {
                     \voiceOne
 	            \easterHymnVoiceDefault
 	            \easterHymnVoiceBassA_dropin
@@ -96,11 +110,16 @@ bridge_end = { r4 \bar "|." }
 	            \stAnneVoiceBassA_dropin
                     \chorus_end
 	            \jesusChristusKlugVoiceDefault_dropin
-	            \jesusChristusKlugVoiceBassA_dropin_noferm
+	            \jesusChristusKlugVoiceBassA_dropin_autotie
                     \bridge_end
 	        }
 
-	        \new Voice="bassB" {
+	        \new Voice="bassB" \with {
+                    \remove "Note_heads_engraver"
+                    \consists "Completion_heads_engraver"
+                    \remove "Rest_engraver"
+                    \consists "Completion_rest_engraver"
+                } {
                     \voiceTwo
 	            \easterHymnVoiceDefault
 	            \easterHymnVoiceBassB_dropin
@@ -109,7 +128,7 @@ bridge_end = { r4 \bar "|." }
 	            \stAnneVoiceBassB_dropin
                     \chorus_end
 	            \jesusChristusKlugVoiceDefault_dropin
-	            \jesusChristusKlugVoiceBassB_dropin_noferm
+	            \jesusChristusKlugVoiceBassB_dropin_autotie
                     \bridge_end
 	        }
             >>

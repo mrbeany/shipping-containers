@@ -2,7 +2,6 @@
 
 \include "../tunes/tune-Ich_Sterbe_Taeglich.ily" 
 \include "../Shipping-Containers/Shipping_Containers-words.ily"
-\include "../filtermusic.ily"
 \include "../book/album.ily"
 
 \bookpart {
@@ -33,7 +32,7 @@
                 \new Voice="trebleB" {
                     \voiceTwo
 	            \sterbeTaeglichDefault
-	            \filtermusic \sterbeTaeglichSaVb 
+	            \sterbeTaeglichSaVb 
 	        }
             >>
 
@@ -49,7 +48,7 @@
 	        \new Voice="bassA" {
                     \voiceOne
 	            \sterbeTaeglichDefault
-	            \filtermusic \sterbeTaeglichSbVa 
+	            \sterbeTaeglichSbVa 
 	        }
 	        \new Voice="bassB" {
                     \voiceTwo

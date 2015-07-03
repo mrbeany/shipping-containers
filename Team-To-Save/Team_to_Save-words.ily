@@ -6,7 +6,7 @@ teamToSavePoet = "S.W. Black"
 teamToSaveLyricsA = \lyricmode {
     \set stanza = #"1."
     On a plan -- et once fill'd with goo, 
-    there now lives hu -- mans and pup -- ies. 
+    there now lives hu -- mans and pup -- pies. 
     We were think -- ing all would __ _ be well
     but we were wrong or so it seems. 
     For the goo deep in the ground

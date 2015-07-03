@@ -2,18 +2,6 @@
 
 lifeIsHardPoet = "S.W. Black"
 lifeIsHardTitle = "Life is Hard"
-lifeIsHardLead = \markup {
-        \wordwrap {
-            \medium {
-                \italic "(Spoken)" 
-                But that might not last. What if some of our old war
-                machines still lurk out here in the depths of space?
-            }
-        }
-    }
-lifeIsHardFollowUp = \markup {
-        \null
-    }
 
 lifeIsHardLyricsA = \lyricmode {
 \set stanza = #"1."
