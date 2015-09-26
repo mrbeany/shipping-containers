@@ -77,53 +77,59 @@ _BookType_ can be one of:
 
 The differences between the songbooks:
 
-_ShippingContainersFakebook_
-
+<dl>
+<dt>ShippingContainersFakebook</dt>
+<dd><p>
     The "Fakebook" just has the sung parts. These try to all fit
     on a single page when possible, and this is possible a lot more often when we just care
     about a single staff.
-
+</p><p>
     Ambitus is enabled. 
+</p></dd>
 
-_ShippingContainersHymnStyle_
-
+<dt>ShippingContainersHymnStyle</dt>
+<dd><p>
     "Hymn Style" is designed for SATB singing. The lyrics are between the
     tenor and bass staffs, and each staff has an up-stem and a down-stem voice.
-
+</p><p>
     We can add ambitus to the staffs, but it is not currently enabled.
+</p></dd>
 
-_ShippingContainersMidis_
-
+<dt>ShippingContainersMidis</dt>
+<dd><p>
     The "Midis" version doesn't build a songbook at all. It builds MIDI files.
-
+</p><p>
     There are two versions of all the songs, with names that should clearly
     indicate which songs are which.
-
+</p><p>
     One version has a basename suffix of "-withParts", and this version has the following
     MIDI tracks:
-
-    1. tenor staff, both voices
-    2. bass staff, both voices
-    3. metronome, drums following time
-    4. for vocals, which is the same notes that will be sung
-
+</p><ol>
+    <li>tenor staff, both voices</li>
+    <li>bass staff, both voices</li>
+    <li>metronome, drums following time</li>
+    <li>for vocals, which is the same notes that will be sung</li>
+</ol><p>
     The version without this suffix, just has the two piano staffs.
+</p></dd>
 
-_ShippingContainersSongbook_
-
+<dt>ShippingContainersSongbook</dt>
+<dd><p>
     The "Songbook" version is the version distributed with the album on Bandcamp.
     <https://mrbeany.bandcamp.com/album/shipping-containers> 
-
+</p><p>
     This version is in US Letter format, with ambitus for the vocal part.
+</p></dd>
 
-_ShippingContainersSongbook-A4_
-
+<dt>ShippingContainersSongbook-A4</dt>
+<dd><p>
     This is exactly the same as the "Songbook" version, except formatted for
     the international standard A4 paper instead of US-Letter.
-
+</p><p>
     Since the international sizes make sense, you can use this version for
     any of the A sizes and it will scale cleanly without unexpected whitespace.
-
+</p></dd>
+</dl>
 
 ## Known bug/feature list
 
