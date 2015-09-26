@@ -63,7 +63,7 @@ trivial for any environment.
 
 1. Go to this directory, whereever it is located.
 2. Type: cd book
-3. Type: lilypond _<BookType>_
+3. Type: lilypond _BookType_
 
 ### Available book types
 
